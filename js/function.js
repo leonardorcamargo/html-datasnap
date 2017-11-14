@@ -23,7 +23,7 @@ function doEntrar(doc) {
 		  	'/'+doc.getElementById('idSenha').value;
   console.log(url);
 
-  var xhr = createCORSRequest('POST', url);
+  var xhr = createCORSRequest('GET', url);
   if (!xhr) {
     alert('CORS not supported');
     return;
