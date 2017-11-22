@@ -1,6 +1,3 @@
-
-
-//function onLoad() {
 	var usuarioLogado = {};
 	
 	const URL_BASE = "http://54.233.167.116:9722/datasnap/rest/";
@@ -21,7 +18,6 @@
 			return URL_LOGIN + usuario.USU_NOME + "/" + usuario.USU_SENHA;
 		}
 	}
-//
 
 function getUrlLogin(usuario) {
 	if (!usuario.isEmptyObject){
