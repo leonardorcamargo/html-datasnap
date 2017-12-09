@@ -1,6 +1,4 @@
-function buscarClientes(){
-    console.log("teste");
-    
+function buscarClientes(){    
     var clientes = [
         {
             razaosocial:"Razão social 1",
@@ -41,12 +39,14 @@ function buscarClientes(){
     ];
 
     carregarTabela(clientes);
+    console.log("Passou pelo buscarClientes");
 }
 
 function carregarTabela(clientes){
     var tabela = document.querySelector("#idTabelaClientes");
+    console.log(tabela)
     var tbody = tabela.querySelector("tbody");
-    
+    console.log(tbody)
     clientes.forEach(function(cliente) {
         tbody.appendChild(montaTr(cliente));
     });

@@ -11,9 +11,7 @@ botaoCliente.addEventListener("click",function(){
 });
 
 function carregaControleCliente(){
-    var main = document.querySelector("#idMainHome");
-    main.setAttribute("w3-include-html","view/cliente.html");
-    w3.includeHTML();
+    document.open("view/cliente.html");
 }
 
 var botaoTeste = document.querySelector("#idBotaoTeste");
